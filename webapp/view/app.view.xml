@@ -1,0 +1,69 @@
+<mvc:View
+	controllerName = "sap.ui.bootcampBootcamp.controller.app"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	
+	<App class="sapui5BootcampWT">
+		<pages>
+			<Page title="Home Page">
+			<headerContent>
+				<Button icon="sap-icon://hello-world"
+						press="onOpenDialog"/>
+			</headerContent>
+			<content>
+				
+				<mvc:XMLView viewName="sap.ui.bootcampBootcamp.view.LoginPanel"/>
+				<mvc:XMLView viewName="sap.ui.bootcampBootcamp.view.InvoiceList"/>
+				
+				<!--<Panel	headerText="User Login"-->
+				<!--		class="sapUiResponsiveContentPadding"-->
+				<!--		width="auto">-->
+				<!--<content>-->
+					
+				<!--	<Text	text="Username"-->
+				<!--			class="sapThemeHighlight-asColor myCustomText"/>-->
+				<!--	<Input-->
+				<!--		value="{/field/username}"-->
+				<!--		id="username"/>-->
+					
+				<!--	<Text text="Password"/>-->
+				<!--	<Input type="Password" id="password"/>-->
+					
+				<!--	<Button text="{i18n>loginButtonText}"-->
+				<!--			press="onLoginPress"-->
+				<!--			class="myCustomButton"/>-->
+				
+				<!--</content>-->
+				<!--</Panel>-->
+				
+			</content>
+			</Page>
+		</pages>
+	</App>
+	
+</mvc:View>
+
+
+<!--<mvc:View-->
+<!--	controllerName = "sap.ui.bootcampBootcamp.controller.app"-->
+<!--	xmlns="sap.m"-->
+<!--	xmlns:mvc="sap.ui.core.mvc">-->
+	
+<!--	<Text text="Username"/>-->
+<!--	<Input type="Text" id="username"/>-->
+	
+<!--	<Input-->
+<!--		value="{/field/username}"-->
+<!--		description="Hello {/field/username}"-->
+<!--		valueLiveUpdate="true"-->
+<!--		width="100%"-->
+<!--		id="username"/>-->
+	
+<!--	<Text text="Password"/>-->
+<!--	<Input type="Password" id="password"/>-->
+	
+<!--	<Button text="Login" press="onLoginPress"/>-->
+<!--	<Button text="{i18n>loginButtonText}" press="onLoginPress"/>-->
+	
+<!--</mvc:View>-->

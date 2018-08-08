@@ -1,0 +1,19 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.bootcampBootcamp.controller.LoginPanel">
+	
+	<Panel headerText="User Login" class="sapUiResponsiveContentPadding" width="auto" expandable="true">
+	<content>
+		
+		<Text text="Username" class="sapThemeHighlight-asColor myCustomText"/>
+		<Input value="{/field/username}" id="username"/>
+		
+		<Text text="Password"/>
+		<Input type="Password" id="password"/>
+		
+		<Button text="{i18n>loginButtonText}" press="onLoginPress" class="myCustomButton sapUiLargeMarginTop"/>
+		
+		<Button text="{i18n>openDialogButtonText}" press="onOpenDialog" class="sapUiLargeMarginTop sapUiSmallMarginBegin"/>
+	
+	</content>
+	</Panel>
+	
+</mvc:View>
